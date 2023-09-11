@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "KBS CI";
+  font-style: normal;
+  src: url(/resource/font/KBS_CI.otf) format("opentype");
+}
+body,
+body * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.news-categories > strong {
+  font-family: "KBS CI", sans-serif;
+}
+
+.sns .kbs {
+  font-family: "KBS CI", sans-serif;
+}

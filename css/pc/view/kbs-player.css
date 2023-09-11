@@ -1,0 +1,481 @@
+.player-app {
+  max-width: 750px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #141414;
+}
+
+.player-wrap {
+  position: relative;
+  background-color: #141414;
+}
+
+.jwplayer {
+  box-sizing: border-box;
+}
+
+.jw-button-container {
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+}
+
+.jw-button-container .jw-icon-playback {
+  order: 1;
+}
+
+.jw-button-container .jw-icon-next {
+  display: none !important;
+}
+
+.jw-button-container .jw-flag-horizontal-slider {
+  order: 2;
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+.jw-button-container .jw-horizontal-volume-container {
+  display: flex !important;
+  order: 3;
+}
+
+.jw-button-container .jw-text-elapsed {
+  order: 4;
+  justify-content: right !important;
+}
+
+.jw-button-container .jw-text-duration {
+  order: 5;
+}
+
+.jw-button-container .jw-icon-rewind {
+  display: none !important;
+}
+
+.jw-button-container .jw-button-autocontrol {
+  order: 6;
+  flex: auto;
+  margin-left: 150px !important;
+}
+
+.jw-button-container .jw-button-caption {
+  order: 7;
+}
+
+.jw-button-container .jw-settings-sharing {
+  order: 8;
+}
+
+.jw-button-container .jw-icon-cc {
+  display: none !important;
+}
+
+.jw-button-container .jw-icon-settings {
+  order: 9;
+}
+
+.jw-button-container .jw-icon-fullscreen {
+  order: 10;
+}
+
+.jw-button-container .jw-icon-fullscreen svg {
+  visibility: hidden !important;
+}
+
+.jw-flag-audio-player .jw-button-container .jw-icon,
+.jwplayer:not(.jw-flag-small-player) .jw-button-container .jw-icon {
+  flex: 1 !important;
+}
+
+.jw-icon-volume svg,
+.jw-off svg {
+  fill: #fff;
+}
+
+.jw-display-icon-rewind svg {
+  display: none !important;
+}
+
+.jw-icon-display svg {
+  fill: #fff;
+}
+.jw-icon-inline svg {
+  fill: #fff;
+}
+
+.jw-display-icon-container.jw-display-icon-next.jw-reset {
+  display: none !important;
+}
+
+.jw-icon-pip {
+  display: none !important;
+}
+
+.jw-settings-captions {
+  display: none !important;
+}
+
+.jwplayer.jw-state-paused:not(.jw-flag-touch):not(.jw-flag-small-player):not(
+    .jw-flag-casting
+  ):not(.jw-flag-play-rejected)
+  .jw-display,
+.jwplayer.jw-state-playing:not(.jw-flag-touch):not(.jw-flag-small-player):not(
+    .jw-flag-casting
+  )
+  .jw-display {
+  display: flex !important;
+}
+
+.player-wrap .jw-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 140px;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: center center;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  outline: none;
+}
+
+.player-wrap .keyinfo-wrap {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.player-wrap .button-keyinfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.player-wrap .keyinfo-box {
+  position: absolute;
+  top: 34px;
+  right: -4px;
+  display: block;
+  width: 320px;
+  padding: 46px 15px 15px 15px;
+  background-color: #fff;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+}
+
+.player-wrap .keyinfo-box .close-keyinfo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.player-wrap .keyinfo-box .close-keyinfo:before,
+.player-wrap .keyinfo-box .close-keyinfo:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #999;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.player-wrap .keyinfo-box .close-keyinfo:after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.player-wrap .keyinfo-box > p {
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 1.5em;
+}
+
+.player-wrap .keyinfo-box > p:last-child {
+  padding-bottom: 15px;
+}
+
+.player-wrap .keyinfo-box > p:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.vod-recommed-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 40px 80px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+}
+
+.vod-recommed-thumb {
+  position: relative;
+  display: flex;
+  width: 180px;
+  height: 120px;
+  margin: 10px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.vod-recommed-thumb .vod-recommed-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.jw-animation.ani-backward {
+  display: none !important;
+}
+
+.jw-animation.ani-forward {
+  display: none !important;
+}
+
+.jw-animation {
+  display: none;
+}
+
+.jw-svg-icon-link path {
+  color: #fff;
+}
+
+/* 230905 수정 */
+.jw-controlbar {
+  z-index: 2;
+}
+.jw-controlbar:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.jw-icon-playback,
+.jw-icon-volume,
+.jw-text-elapsed,
+.jw-button-caption,
+.jw-button-autocontrol,
+.jw-settings-sharing,
+.jw-settings-submenu-button,
+.jw-icon-fullscreen {
+  max-width: 44px;
+  background-position: center center !important;
+}
+.jw-button-autocontrol {
+  margin: 0 20px;
+}
+.jw-flag-fullscreen .jw-icon-playback,
+.jw-flag-fullscreen .jw-icon-volume,
+.jw-flag-fullscreen .jw-text-elapsed,
+.jw-flag-fullscreen .jw-button-caption,
+.jw-flag-fullscreen .jw-button-autocontrol,
+.jw-flag-fullscreen .jw-settings-sharing,
+.jw-flag-fullscreen .jw-settings-submenu-button,
+.jw-flag-fullscreen .jw-icon-fullscreen {
+  max-width: 60px;
+}
+/* 230906 수정 */
+.jw-reset[aria-label="재생"] svg,
+.jw-reset[aria-label="정지"] svg,
+.jw-icon-rewind svg,
+.jw-icon-forward svg,
+.jw-icon-playback svg,
+.jw-icon-volume svg,
+.jw-button-autocontrol svg,
+.jw-button-caption svg,
+.jw-settings-submenu-button svg,
+.jw-icon-fullscreen svg,
+.jw-reset[aria-label="다시 보기"] svg {
+  display: none;
+}
+.jw-reset[aria-label="재생"] {
+  background: url(/resource/image/player/play_big.png) no-repeat center center;
+}
+.jw-icon-rewind {
+  background: url(/resource/image/player/fast-backward-10.png) no-repeat center
+    center;
+}
+.jw-icon-forward {
+  background: url(/resource/image/player/fast-forward-10.png) no-repeat center
+    center;
+}
+.jw-icon-playback[aria-label="재생"] {
+  background: url(/resource/image/player/icon-recommend-play.png) no-repeat
+    center center;
+}
+.jw-icon-playback[aria-label="정지"] {
+  background: url(/resource/image/player/pause.png) no-repeat center center;
+}
+.jw-button-autocontrol {
+  background: url(/resource/image/player/icon-jw-autoplay_off.png) no-repeat
+    center center;
+}
+.jw-button-autocontrol.on {
+  background: url(/resource/image/player/icon-jw-autoplay_on.png) no-repeat
+    center center;
+}
+.jw-button-caption {
+  background: url(/resource/image/player/Subtitle_off.png) no-repeat center
+    center;
+}
+.jw-button-caption {
+  background: url(/resource/image/player/Subtitle_off.png) no-repeat center
+    center;
+}
+.jw-button-caption.on {
+  background: url(/resource/image/player/Subtitle_on.png) no-repeat center
+    center;
+}
+.jw-settings-sharing {
+  background: url(/resource/image/player/share.png) no-repeat center center;
+}
+.jw-settings-submenu-button {
+  margin: 0 15px;
+  background: url(/resource/image/player/setting.png) no-repeat center center;
+}
+.jw-icon-fullscreen {
+  background: url(/resource/image/player/ico-jw-fullscreen.png) no-repeat center
+    center;
+}
+.jw-icon-fullscreen.jw-off {
+  background: url(/resource/image/player/ico-jw-exitscreen.png) no-repeat center
+    center;
+}
+.jw-reset[aria-label="다시 보기"] {
+  background: url(/resource/image/player/rewind.png) no-repeat center center;
+}
+.jwplayer:not(.jw-flag-small-player) .jw-button-autocontrol {
+  margin-left: 50px !important;
+}
+.jwplayer:not(.jw-flag-small-player) .jw-icon-playback,
+.jwplayer:not(.jw-flag-small-player) .jw-icon-volume,
+.jwplayer:not(.jw-flag-small-player) .jw-button-caption,
+.jwplayer:not(.jw-flag-small-player) .jw-button-autocontrol,
+.jwplayer:not(.jw-flag-small-player) .jw-settings-sharing,
+.jwplayer:not(.jw-flag-small-player) .jw-settings-submenu-button,
+.jwplayer:not(.jw-flag-small-player) .jw-icon-fullscreen {
+  max-width: 22px;
+  background-size: contain;
+}
+.jw-flag-fullscreen .vod-recommed-thumb {
+  width: calc(33.333% - 20px);
+  aspect-ratio: 180 / 120;
+  height: auto;
+}
+.vod-recommed-list {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.jw-reset[aria-label="다시 보기"] svg {
+  display: none !important;
+}
+
+.player-wrap.fix .jw-text-track-display .jw-text-track-cue {
+  top: 25px !important;
+}
+
+.player-wrap:not(.fix) .jw-text-track-display .jw-text-track-cue {
+  top: 45px !important;
+}
+
+/*
+.vod-recommed-thumb .vod-recommed-title {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    will-change: opacity;
+}
+
+.vod-recommed-thumb:hover .vod-recommed-title {
+    display: flex;
+    animation-name: recommendAnimation;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards
+}
+
+.vod-recommed-thumb:hover .vod-recommed-title:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(/resource/image/mobile/player/icon-recommend-play.png) no-repeat center center;
+    opacity: 0.65;
+}
+
+@keyframes recommendAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*/

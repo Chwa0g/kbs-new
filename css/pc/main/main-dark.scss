@@ -1,0 +1,115 @@
+@charset 'utf-8';
+@import "../common/variable";
+@import "../common/dark-variable";
+@import "../common/svg";
+
+body.dark {
+  #contents {
+    background-color: $darkBlack600;
+    .look-more {
+      .txt {
+        color: $neutral3000;
+      }
+      .plus-btn {
+        background: url($circlePlusDark) center center no-repeat;
+      }
+    }
+    .box {
+      border: 1px solid $darkBlack800;
+      background-color: $darkBlack900;
+
+      .box-title {
+        background-color: $darkBlack900;
+        .title {
+          color: #fff;
+        }
+        .sub-title {
+          color: $darkNeutral;
+        }
+      }
+
+      .box-content {
+        .txt-wrapper {
+          .time-wrapper {
+            .time {
+              border: 1px solid $darkNeutral500;
+              background-color: $darkBlack900;
+              color: $darkNeutral400;
+            }
+          }
+        }
+
+        &:hover {
+          .txt-wrapper {
+            .title {
+              color: $darkBlue;
+            }
+          }
+        }
+
+        &.has-border {
+          border-bottom: 1px solid $darkBlack1000;
+        }
+      }
+
+      .box-contents {
+        &.has-border-contents {
+          .box-content {
+            &:first-child {
+              border-top: 1px solid $darkBlack1200;
+            }
+          }
+        }
+      }
+
+      &.head-line {
+        .box-contents {
+          .main-news-wrapper {
+            .main-news {
+              .txt-wrapper {
+                .news-txt {
+                  color: $darkNeutral;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .look-more-wrapper {
+      border-top: 1px solid $darkBlack1000;
+    }
+    .pagination-group-wrapper {
+      border-top: 1px solid $darkBlack1000;
+      .pagination-group {
+        .previous {
+          border: 1px solid $darkNeutral600;
+          background-color: $darkBlack1100;
+          &::before {
+            background: url($boardArrowDark) 0 0 no-repeat;
+          }
+        }
+        .next {
+          border: 1px solid $darkNeutral600;
+          background-color: $darkBlack1100;
+          &::before {
+            background: url($boardArrowDark) 0 0 no-repeat;
+          }
+        }
+        .pagination {
+          border-top: 1px solid $darkNeutral600;
+          border-bottom: 1px solid $darkNeutral600;
+          color: $darkNeutral800;
+
+          .swiper-pagintaion-current {
+            color: $darkNeutral;
+          }
+
+          .swiper-pagination-total {
+            color: $darkNeutral800;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+@charset 'utf-8';
+@import "../common/_variable";
+@import "../common/_dark-variable";
+@import "../common/_svg";
+
+body.dark {
+  #contents {
+    .view-box {
+      background-color: $darkBlack900;
+      border: 1px solid $darkBlack800;
+
+      > .title-wrapper {
+        .sub-title {
+          color: $darkNeutral;
+        }
+      }
+
+      .view-title-look-more {
+        > .title-wrapper {
+          .title {
+            color: $white;
+          }
+        }
+
+        .title-wrapper {
+          .title {
+            color: $white;
+          }
+          .sub-title {
+            color: $darkNeutral;
+            &.has-line {
+              &::before {
+                background-color: $neutral2700;
+              }
+            }
+          }
+        }
+      }
+    }
+    .view-page {
+      .view-contents-wrapper {
+        .view-headline {
+          .category-issue {
+            .category-name {
+              border: 1px solid rgba(148, 186, 220, 0.4);
+            }
+            .issue-name {
+              color: $white;
+            }
+          }
+          .headline-title {
+            color: $white;
+          }
+          .tts-summary {
+            .tts-btn-wrapper {
+              .tts-btn {
+                background: url($ttsDark) center center no-repeat;
+
+                &.on {
+                  background: url($ttsOn) center center no-repeat;
+                }
+              }
+            }
+            .summary-btn {
+              border: 1px solid $darkNeutral500;
+            }
+          }
+          .dates {
+            .input-date,
+            .edit-date {
+              color: $darkNeutral;
+            }
+            .edit-date {
+              &::before {
+                background-color: $gray;
+              }
+            }
+          }
+        }
+        .view-article {
+          .prev-next-links {
+            .prev-link {
+              .prev-title-wrapper {
+                border: 1px solid $darkNeutral500;
+                .prev-txt {
+                  &::after {
+                    background-color: $darkNeutral500;
+                  }
+                }
+              }
+            }
+            .next-link {
+              .next-title-wrapper {
+                border: 1px solid $darkNeutral500;
+                .next-txt {
+                  color: $darkNeutral400;
+
+                  &::before {
+                    background-color: $darkNeutral500;
+                  }
+                }
+              }
+            }
+          }
+          .related-articles-wrapper {
+            .title {
+              color: $white;
+            }
+            .related-articles-links {
+              .related-articles-list {
+                .related-articles-link {
+                  color: $neutral3000;
+                }
+              }
+            }
+          }
+        }
+        .view-reporter {
+          .reporter-info {
+            .mailto-btn {
+              .mail-txt {
+                color: $darkNeutral;
+              }
+            }
+          }
+          .reporter-txt {
+            color: $darkNeutral;
+          }
+        }
+        .view-article-like {
+          > .title {
+            color: $white;
+          }
+          .like-btns {
+            .like-btns-list {
+              .btn-title-wrapper {
+                .btn-title {
+                  color: $neutral3000;
+                }
+              }
+              .like-btn {
+                background: url($viewLikeDark) center center no-repeat;
+
+                &.on {
+                  background: url($viewLikeDarkOn) center center no-repeat;
+                }
+              }
+              .cheer-btn {
+                background: url($viewCheerDark) center center no-repeat;
+
+                &.on {
+                  background: url($viewCheerDarkOn) center center no-repeat;
+                }
+              }
+              .want-btn {
+                background: url($viewWantDark) center center no-repeat;
+
+                &.on {
+                  background: url($viewWantDarkOn) center center no-repeat;
+                }
+              }
+            }
+          }
+        }
+        .comment-notice {
+          border-top: 2px solid $darkBlack1000;
+          border-bottom: 1px solid $darkBlack1000;
+          .notice-icon {
+            background: url($noticeIconDark) center center no-repeat;
+          }
+          .notice-text {
+            color: $darkNeutral;
+          }
+        }
+      }
+      .side-contents-wrapper {
+        .side-headline {
+          .news-list {
+            .main-news {
+              .title {
+                color: $white;
+              }
+            }
+          }
+        }
+        .side-title {
+          color: $white;
+          &.has-border {
+            border-bottom: 1px solid $darkBlack1000;
+          }
+        }
+        .side-most-viewed {
+          .ranks {
+            .ranks-list {
+              &:first-child {
+                border-top: $darkBlack1000;
+              }
+              border-bottom: 1px solid $darkBlack1000;
+            }
+          }
+        }
+      }
+    }
+    .error-box {
+      .error-text {
+        color: $white;
+      }
+      .buttons-wrapper {
+        .home-button,
+        .prev-page-button {
+          border: 1px solid $darkNeutral500;
+          color: $neutral3000;
+        }
+      }
+      .address {
+        color: $neutral3000;
+      }
+    }
+    .comment-area {
+      background-color: $white;
+      padding: 24px 0 0 24px;
+      .title {
+        color: $black;
+        margin-top: 0;
+      }
+    }
+  }
+
+  #msg {
+    background-color: $white;
+    padding: 24px;
+  }
+
+  .detail-body {
+    .view_img_dsc {
+      color: $neutral3000;
+    }
+    a {
+      color: $darkBlue;
+    }
+    div.anchor {
+      background-color: $darkBlack1500 !important;
+      span.anchor {
+        color: $neutral3000 !important;
+      }
+    }
+    div.report {
+      background-color: $darkBlack1500 !important;
+      span.report {
+        color: $neutral3000 !important;
+      }
+    }
+  }
+
+  .article-summary:before {
+    background: $darkNeutral700;
+  }
+}

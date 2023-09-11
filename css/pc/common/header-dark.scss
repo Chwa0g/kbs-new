@@ -1,0 +1,321 @@
+@charset 'utf-8';
+@import "_variable";
+@import "_dark-variable";
+@import "_svg";
+
+body.dark {
+  #header {
+    .header-nav-wrapper {
+      .full-menu-wrapper {
+        background-color: $darkBlack500;
+        border-bottom: 1px solid #696969;
+        .full-menu {
+          .common-menu {
+            border-right: 1px solid #696969;
+
+            &.on {
+              background-color: $darkBlack1600;
+            }
+
+            .full-menu-links-wrapper {
+              .full-menu-heading {
+                color: $white;
+              }
+              .full-menu-links {
+                .full-menu-list {
+                  .full-menu-link {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+
+            .sub-heading-wrapper {
+              .sub-heading {
+                color: $white;
+                .sub-heading-link {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .search-most-view {
+        .search-wrapper {
+          background-color: $neutral800;
+
+          .search {
+            .search-box-wrapper {
+              .search-box {
+                .search-box-input {
+                  border: 1px solid $neutral2000;
+                  background-color: $neutral800;
+                  color: $neutral200;
+                }
+                .search-btn {
+                  background-color: $black;
+                }
+                .recommend-search {
+                  border: 1px solid $neutral2000;
+                  border-top: none;
+                  .recommend-search-list {
+                    background-color: $neutral800;
+                    .recommend-word {
+                      color: $neutral200;
+                      strong {
+                        color: $neutral200;
+                      }
+                      .search-word {
+                        color: $neutral200;
+                      }
+                    }
+                  }
+                }
+                .cancel-btn {
+                  background: url($clearWhite) center center no-repeat;
+                }
+              }
+              .recommend-keyword {
+                .title-wrapper {
+                  .desc {
+                    color: #bbb;
+                  }
+                }
+                .keywords {
+                  .keyword-list {
+                    .keyword-link {
+                      border: 1px solid $neutral2000;
+                      color: $white;
+
+                      &:hover {
+                        background-color: $white;
+                        color: $neutral800;
+                        border: 1px solid $neutral800;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .breaking-news-wrapper {
+      background-color: $white;
+      .breaking-news {
+        .news-title {
+          .badge {
+            background: url($breakingNewsDark) center center no-repeat;
+          }
+          .title {
+            color: $black200;
+          }
+        }
+        .all-link {
+          .txt {
+            color: $black200;
+          }
+          .arrow {
+            background: url($goAllDark) center center no-repeat;
+          }
+        }
+        &.rolling {
+          .breaking-news-swiper {
+            .swiper-wrapper {
+              .breaking-news-list {
+                .breaking-news-link {
+                  color: $black200;
+                }
+              }
+            }
+          }
+          .arrow-btn {
+            transform: rotateX(360deg);
+            background: url($circleArrow) center center no-repeat;
+
+            &.on {
+              transform: rotateX(180deg);
+            }
+          }
+        }
+      }
+    }
+    .rolling-breaking-news {
+      .breaking-news-history-wrapper {
+        background-color: $neutral2200;
+        .breaking-news-history {
+          .histories {
+            .history-list {
+              .time {
+                color: $black;
+              }
+              .txt-wrapper {
+                .txt {
+                  color: $black;
+                }
+                .circle {
+                  background: url($breakingDotDark) center center no-repeat;
+                }
+                &::after {
+                  background-color: $neutral700;
+                }
+              }
+            }
+          }
+          .all-link {
+            border: 1px solid rgba(2, 2, 2, 0.3);
+            .txt {
+              color: $neutral800;
+            }
+            .arrow-btn {
+              background: url($breakingArrowDark) center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .header-top-menu-wrapper {
+      background-color: $darkBlack;
+      .header-top-menu {
+        .weather-login-menu {
+          .kbs-world-select {
+            .foreign-site-links {
+              background-color: $black;
+              border: 1px solid $darkBlack1300;
+              .foreign-site-list {
+                .foreign-site-link {
+                  color: $neutral3000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-title-menu-wrapper {
+      background-color: $darkBlack100;
+      .header-title-menu {
+        .disaster-portal-link {
+          background-color: $darkBlack100;
+          border: 1px solid rgba(255, 167, 176, 0.4);
+
+          .disaster-message {
+            color: $darkNeutral;
+          }
+        }
+        .header-logo {
+          .header-logo-link {
+            .header-logo-img {
+              content: url("/resource/image/pc/logo_dark.png");
+            }
+          }
+        }
+        .report-live-menu {
+          .report-link {
+            background-color: $darkBlack100;
+            border: 1px solid rgba(148, 186, 220, 0.4);
+
+            &:hover {
+              color: $blue1300;
+            }
+          }
+          .live-link {
+            background-color: $darkBlack100;
+            border: 1px solid rgba(255, 167, 176, 0.4);
+            .txt {
+              color: $darkNeutral;
+            }
+          }
+        }
+      }
+    }
+    .header-nav-wrapper {
+      background-color: $darkBlack300;
+      border-top: 1px solid $darkBlack300;
+      border-bottom: 1px solid $darkBlack300;
+      .header-nav {
+        .nav-menu {
+          .hamburger-search-btns {
+            .hamburger-btn {
+              background: url($menu) 0 0 no-repeat;
+
+              &.on {
+                background: url($closeWhite) 0 0 no-repeat;
+              }
+            }
+            .search-btn {
+              background: url($search) 0 0 no-repeat;
+            }
+          }
+          .nav-links {
+            .nav-list {
+              .nav-link {
+                color: #fff;
+              }
+            }
+          }
+          .nav-logo {
+            content: url(/resource/image/pc/nav_logo_dark.png);
+          }
+          .article-title {
+            color: $white;
+          }
+        }
+      }
+      .search-most-view {
+        .most-view-wrapper {
+          background-color: $black;
+          .most-view {
+            .most-view-title {
+              color: $white;
+            }
+            .ranks {
+              .ranks-list {
+                .ranks-link {
+                  &:hover {
+                    .title {
+                      color: $darkBlue;
+                    }
+                  }
+                  .title {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .disaster-rolling-wrapper {
+      background-color: $darkBlack600;
+
+      .disaster-rolling {
+        background-color: $darkNeutral300;
+        .disaster-rolling-swiper {
+          .swiper-wrapper {
+            .disaster-rolling-list {
+              .rolling-message {
+                color: $neutral3000;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-notice-wrapper {
+      background-color: $darkBlack600;
+      .header-notice {
+        background-color: $darkBlack700;
+        .notice-title {
+          color: #fff;
+        }
+        .notice-txt {
+          color: $neutral3000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>KBS Main View</title>
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../css/mobile/common/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../css/mobile/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="notch-bg"></div>
+      <div class="top-menu">
+        <a href="#" class="report-link">제보</a>
+        <h1 class="top-logo">
+          <a href="#" class="home-link">
+            <img
+              class="img"
+              src="/resource/image/mobile/mo_logo.png"
+              alt="logo image"
+            />
+          </a>
+        </h1>
+        <div class="search-hamburger">
+          <button type="button" class="search-btn"></button>
+          <button type="button" class="hamburger-btn"></button>
+        </div>
+      </div>
+      <div class="search-menu">
+        <div class="search-input-keywords">
+          <button type="button" class="close-btn"></button>
+          <div class="search-input-wrapper">
+            <p class="title">어떤 기사를 찾으시나요?</p>
+            <div class="search-box">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="원하는 검색어를 입력해주세요"
+              />
+              <button type="button" class="search-btn">
+                <span class="search-img"></span>
+              </button>
+              <button type="button" class="close-btn"></button>
+              <ul class="recommend-search">
+                <li class="recommend-search-list">
+                  <button type="button" class="recommend-word">
+                    <strong>추천</strong>어
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="keywords">
+            <a href="#" class="keyword"># 누리호</a>
+            <a href="#" class="keyword"># 마약검거</a>
+            <a href="#" class="keyword"># 노시니어존</a>
+            <a href="#" class="keyword"># 태영호</a>
+            <a href="#" class="keyword"># 날씨</a>
+            <a href="#" class="keyword"># 김남국</a>
+          </div>
+        </div>
+        <div class="most-viewed">
+          <h4 class="title">많이 본 뉴스</h4>
+          <div class="box-contents horizontal">
+            <a href="#" class="box-content">
+              <div class="thumbnail">
+                <img
+                  class="img"
+                  src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                  alt="test img"
+                />
+                <div class="rank-badge">1</div>
+              </div>
+              <div class="title-wrapper">
+                <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+              </div>
+            </a>
+            <a href="#" class="box-content">
+              <div class="thumbnail">
+                <img
+                  class="img"
+                  src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                  alt="test img"
+                />
+                <div class="rank-badge">2</div>
+              </div>
+              <div class="title-wrapper">
+                <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+              </div>
+            </a>
+            <a href="#" class="box-content">
+              <div class="thumbnail">
+                <img
+                  class="img"
+                  src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                  alt="test img"
+                />
+                <div class="rank-badge">3</div>
+              </div>
+              <div class="title-wrapper">
+                <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+              </div>
+            </a>
+            <a href="#" class="box-content">
+              <div class="thumbnail">
+                <img
+                  class="img"
+                  src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                  alt="test img"
+                />
+                <div class="rank-badge">4</div>
+              </div>
+              <div class="title-wrapper">
+                <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+              </div>
+            </a>
+            <a href="#" class="box-content">
+              <div class="thumbnail">
+                <img
+                  class="img"
+                  src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                  alt="test img"
+                />
+                <div class="rank-badge">5</div>
+              </div>
+              <div class="title-wrapper">
+                <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+              </div>
+            </a>
+            <a href="#" class="box-content">
+              <div class="thumbnail">
+                <img
+                  class="img"
+                  src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                  alt="test img"
+                />
+                <div class="rank-badge">6</div>
+              </div>
+              <div class="title-wrapper">
+                <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger-menu">
+        <div class="ham-top-menu">
+          <div class="report-disaster-link">
+            <a href="#" class="report-link">제보</a>
+          </div>
+          <h1 class="ham-top-logo">
+            <img
+              class="img"
+              src="/resource/image/mobile/mo_logo_dark.png"
+              alt="top logo"
+            />
+          </h1>
+          <div class="setting-close">
+            <a href="#" class="setting-btn"></a>
+            <button type="button" class="close-btn"></button>
+          </div>
+        </div>
+        <div class="login-signup">
+          <a href="#" class="common-btn login">
+            <span class="img"></span>
+            <span class="txt">로그인</span>
+          </a>
+          <!-- <a href="#" class="common-btn logout">
+            <span class="img"></span>
+            <span class="txt">로그아웃</span>
+          </a> -->
+          <a href="#" class="common-btn signup">
+            <span class="img"></span>
+            <span class="txt">회원가입</span>
+          </a>
+          <button href="#" class="common-btn dark-mode">
+            <span class="img"></span>
+            <span class="txt">다크모드</span>
+          </button>
+        </div>
+        <div class="divide-border"></div>
+        <div class="nav-links-slide-wrapper">
+          <div class="nav-links-slide">
+            <ul class="nav-links">
+              <li class="nav-links-list">
+                <a href="#" class="nav-link live">
+                  <span class="txt">LIVE</span>
+                  <span class="white-dot"></span>
+                </a>
+              </li>
+              <li class="nav-links-list">
+                <a href="#" class="nav-link">뉴스9</a>
+              </li>
+              <li class="nav-links-list">
+                <a href="#" class="nav-link">속보</a>
+              </li>
+              <li class="nav-links-list">
+                <a href="#" class="nav-link">프리미엄K</a>
+              </li>
+              <li class="nav-links-list">
+                <a href="#" class="nav-link">재난</a>
+              </li>
+            </ul>
+          </div>
+          <div class="deco-img left"></div>
+          <div class="deco-img right"></div>
+        </div>
+        <ul class="full-menu">
+          <li class="full-menu-list">
+            <button type="button" class="common-btn">
+              <span class="menu-name">분야별</span>
+              <span class="arrow"></span>
+            </button>
+            <div class="menu-links-wrapper">
+              <ul class="menu-links">
+                <li class="menu-links-list three-links">
+                  <a href="#" class="menu-link">전체</a>
+                  <a href="#" class="menu-link">문화</a>
+                  <a href="#" class="menu-link">생활 건강</a>
+                </li>
+                <li class="menu-links-list three-links">
+                  <a href="#" class="menu-link">정치</a>
+                  <a href="#" class="menu-link">IT 과학</a>
+                  <a href="#" class="menu-link">스포츠</a>
+                </li>
+                <li class="menu-links-list three-links">
+                  <a href="#" class="menu-link">경제</a>
+                  <a href="#" class="menu-link">국제</a>
+                  <a href="#" class="menu-link">연예</a>
+                </li>
+                <li class="menu-links-list three-links">
+                  <a href="#" class="menu-link">사회</a>
+                  <a href="#" class="menu-link">재난 환경</a>
+                  <a href="#" class="menu-link">날씨</a>
+                </li>
+                <li class="menu-links-list three-links">
+                  <a href="#" class="menu-link">이슈</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="full-menu-list">
+            <button type="button" class="common-btn">
+              <span class="menu-name">TV뉴스</span>
+              <span class="arrow"></span>
+            </button>
+            <div class="menu-links-wrapper">
+              <ul class="menu-links">
+                <li class="menu-links-list header">1TV 뉴스</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">06:00 뉴스광장 1부</a>
+                  <a href="#" class="menu-link">07:00 뉴스광장 2부</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">09:30 930뉴스</a>
+                  <a href="#" class="menu-link">17:00 뉴스 5</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">19:00 뉴스 7</a>
+                  <a href="#" class="menu-link">21:00 뉴스 9</a>
+                </li>
+                <li class="menu-links-list">
+                  <a href="#" class="menu-link">22:50 뉴스라인 W</a>
+                </li>
+              </ul>
+              <ul class="menu-links">
+                <li class="menu-links-list header">2TV 뉴스</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">09:00 아침뉴스타임</a>
+                  <a href="#" class="menu-link">10:40 지구촌뉴스</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">15:00 뉴스타임</a>
+                  <a href="#" class="menu-link">18:00 뉴스 6</a>
+                </li>
+              </ul>
+              <ul class="menu-links">
+                <li class="menu-links-list header">1TV 경인</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">뉴스광장(경인)</a>
+                  <a href="#" class="menu-link">930뉴스(경인)</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">뉴스7(경인)</a>
+                  <a href="#" class="menu-link">뉴스9(경인)</a>
+                </li>
+                <li class="menu-links-list">
+                  <a href="#" class="menu-link strong">뉴스특보</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="full-menu-list">
+            <button type="button" class="common-btn">
+              <span class="menu-name">프리미엄K</span>
+              <span class="arrow"></span>
+            </button>
+            <div class="menu-links-wrapper">
+              <ul class="menu-links">
+                <li class="menu-links-list header">취재K</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">취재후·사건후</a>
+                  <a href="#" class="menu-link">여심야심</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">데이터룸</a>
+                  <a href="#" class="menu-link">팩트체크K</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">탐사K</a>
+                  <a href="#" class="menu-link">씨네마진국</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">스포츠K</a>
+                  <a href="#" class="menu-link">제대로 보겠습니다</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">크랩</a>
+                  <a href="#" class="menu-link">속고살지마</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">News Today(영어뉴스)</a>
+                  <a href="#" class="menu-link">주말엔</a>
+                </li>
+              </ul>
+              <ul class="menu-links">
+                <li class="menu-links-list header">글로벌K</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">특파원 리포트</a>
+                  <a href="#" class="menu-link">세계는 지금</a>
+                </li>
+              </ul>
+              <ul class="menu-links">
+                <li class="menu-links-list header">영상K</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">현장연상</a>
+                  <a href="#" class="menu-link">속보영상</a>
+                </li>
+                <li class="menu-links-list">
+                  <a href="#" class="menu-link">친절한뉴스K</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="full-menu-list">
+            <button type="button" class="common-btn">
+              <span class="menu-name">시사</span>
+              <span class="arrow"></span>
+            </button>
+            <div class="menu-links-wrapper">
+              <ul class="menu-links">
+                <li class="menu-links-list header">시사</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">시사기획 창</a>
+                  <a href="#" class="menu-link">일요진단 라이브</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">9층시사국</a>
+                  <a href="#" class="menu-link">남북의 창</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">특파원 보고 세계는 지금</a>
+                  <a href="#" class="menu-link">재난방송센터</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">사사건건</a>
+                  <a href="#" class="menu-link">통합뉴스룸ET</a>
+                </li>
+                <li class="menu-links-list">
+                  <a href="#" class="menu-link">인사이드 경인</a>
+                </li>
+              </ul>
+              <ul class="menu-links">
+                <li class="menu-links-list header">라디오</li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">최경영의 최강시사</a>
+                  <a href="#" class="menu-link">주진우 라이브</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">최영일의 시사본부</a>
+                  <a href="#" class="menu-link">성공예감이대호입니다</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="full-menu-list">
+            <button type="button" class="common-btn">
+              <span class="menu-name">지역</span>
+              <span class="arrow"></span>
+            </button>
+            <div class="menu-links-wrapper">
+              <ul class="menu-links">
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">부산</a>
+                  <a href="#" class="menu-link">순천</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">울산</a>
+                  <a href="#" class="menu-link">전주</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">청원</a>
+                  <a href="#" class="menu-link">대전</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">진주</a>
+                  <a href="#" class="menu-link">청주</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">대구</a>
+                  <a href="#" class="menu-link">충주</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">안동</a>
+                  <a href="#" class="menu-link">춘천</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">포항</a>
+                  <a href="#" class="menu-link">강릉</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">광주</a>
+                  <a href="#" class="menu-link">원주</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">목포</a>
+                  <a href="#" class="menu-link">제주</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="full-menu-list">
+            <button type="button" class="common-btn">
+              <span class="menu-name">바로가기</span>
+              <span class="arrow"></span>
+            </button>
+            <div class="menu-links-wrapper">
+              <ul class="menu-links">
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">좋아요 클립</a>
+                  <a href="#" class="menu-link">제보</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">속보</a>
+                  <a href="#" class="menu-link">재난포털</a>
+                </li>
+                <li class="menu-links-list two-links">
+                  <a href="#" class="menu-link">LIVE</a>
+                  <a href="#" class="menu-link">뉴스아카이브</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="ham-footer">
+          <a href="#" class="home-link">KBS 홈</a>
+          <a href="#" class="common-link youtube"></a>
+          <a href="#" class="common-link kakao"></a>
+          <a href="#" class="common-link facebook"></a>
+          <a href="#" class="common-link twitter"></a>
+          <a href="#" class="common-link instagram"></a>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="status"></div>
+      </div>
+    </header>
+    <main id="contents">
+      <div class="view-headline">
+        <div class="category-issue">
+          <a href="#" class="category-name">아침뉴스</a>
+          <a href="#" class="issue-name">도감청 단서</a>
+        </div>
+        <h4 class="headline-title">
+          고위 당국자 “美 도감청 단서 없어” … 미국 “동맹에 누 범해“ 곤혹 고위
+          당국자 “美 도감청 단서 없어” … 미국 “동맹에 누 범해“ 곤혹고위 당국자
+          “美 도감청 단서 없어” … 미국 “동맹에 누 범해“ 곤혹고위 당국자 “美
+          도감청 단서 없어” … 미국 “동맹에 누 범해“ 곤혹고위 당국자 “美 도감청
+          단서 없어” … 미국 “동맹에 누 범해“ 곤혹고위 당국자 “美 도감청 단서
+          없어” … 미국 “동맹에 누 범해“ 곤혹
+        </h4>
+        <div class="dates">
+          <p class="input-date">입력 2023.04.14(09:07)</p>
+          <p class="edit-date">입력 2023.04.14(09:07)</p>
+        </div>
+        <div class="tts-summary">
+          <button type="button" class="tts-btn"></button>
+          <button type="button" class="summary-btn">요약</button>
+        </div>
+      </div>
+      <div class="view-article box">
+        <div class="player-area"></div>
+        <div class="prev-next-links">
+          <a href="#" class="prev-link">
+            <span class="arrow"></span>
+            <div class="title-wrapper">
+              <p class="prev-text">이전기사</p>
+              <p class="title">벤제마, 사우디 프로 축구서 첫 득점포</p>
+            </div>
+            <img
+              class="img"
+              src="/resource/image/mobile/thum_headerline1.jpg"
+              alt="test img"
+            />
+          </a>
+          <a href="#" class="next-link">
+            <span class="arrow"></span>
+            <div class="title-wrapper">
+              <p class="prev-text">다음기사</p>
+              <p class="title">벤제마, 사우디 프로 축구서 첫 득점포</p>
+            </div>
+            <img
+              class="img"
+              src="/resource/image/mobile/thum_headerline1.jpg"
+              alt="test img"
+            />
+          </a>
+        </div>
+        <div class="related-articles">
+          <h4 class="title">연관기사</h4>
+          <ul class="related-articles-links">
+            <li class="related-articles-list">
+              <a href="#" class="related-articles-link">
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+              </a>
+            </li>
+            <li class="related-articles-list">
+              <a href="#" class="related-articles-link">
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+              </a>
+            </li>
+            <li class="related-articles-list">
+              <a href="#" class="related-articles-link">
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+              </a>
+            </li>
+            <li class="related-articles-list">
+              <a href="#" class="related-articles-link">
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+                미국 공화당 대선주자 헤일리 “한미일 정상회의, 명백히 중국 겨냥”
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="hashtags">
+          <li class="hashtags-list">
+            <a href="#" class="hashtags-link">#사라진 신생아들</a>
+          </li>
+          <li class="hashtags-list">
+            <a href="#" class="hashtags-link">#공영방송_수신료</a>
+          </li>
+          <li class="hashtags-list">
+            <a href="#" class="hashtags-link">#공영방송_수신료</a>
+          </li>
+        </ul>
+      </div>
+      <div class="view-reporter box">
+        <div class="reporter-info">
+          <div class="reporter-img-wrapper">
+            <span class="default-img"></span>
+            <!-- <img src="" alt="test-img" class="image" /> -->
+          </div>
+          <div class="reporter-links-text">
+            <a href="#" class="reporter-name-link">
+              <span class="home-icon"></span>
+              <span class="reporter-name">홍길동 기자</span>
+              <span class="arrow"></span>
+            </a>
+            <button type="button" class="mailto-btn">
+              <span class="mail-icon"></span>
+              <span class="mail-txt">hong@kbs.co.kr</span>
+            </button>
+            <p class="reporter-text">
+              올바른 시선, 편중되지 않는 기사<br />
+              올바른 시선, 편중되지 않는 기사
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="view-reporter multiple box">
+        <div class="reporter-info">
+          <div class="reporter-img-wrapper">
+            <span class="default-img"></span>
+            <!-- <img src="" alt="test-img" class="image" /> -->
+          </div>
+          <div class="reporter-links-text">
+            <a href="#" class="reporter-name-link">
+              <span class="home-icon"></span>
+              <span class="reporter-name">홍길동 기자</span>
+              <span class="arrow"></span>
+            </a>
+            <button type="button" class="mailto-btn">
+              <span class="mail-icon"></span>
+              <span class="mail-txt">hong@kbs.co.kr</span>
+            </button>
+          </div>
+        </div>
+        <div class="reporter-info">
+          <div class="reporter-img-wrapper">
+            <span class="default-img"></span>
+            <!-- <img src="" alt="test-img" class="image" /> -->
+          </div>
+          <div class="reporter-links-text">
+            <a href="#" class="reporter-name-link">
+              <span class="home-icon"></span>
+              <span class="reporter-name">홍길동 기자</span>
+              <span class="arrow"></span>
+            </a>
+            <button type="button" class="mailto-btn">
+              <span class="mail-icon"></span>
+              <span class="mail-txt">hong@kbs.co.kr</span>
+            </button>
+          </div>
+        </div>
+        <div class="reporter-info">
+          <div class="reporter-img-wrapper">
+            <span class="default-img"></span>
+            <!-- <img src="" alt="test-img" class="image" /> -->
+          </div>
+          <div class="reporter-links-text">
+            <a href="#" class="reporter-name-link">
+              <span class="home-icon"></span>
+              <span class="reporter-name">홍길동 기자</span>
+              <span class="arrow"></span>
+            </a>
+            <button type="button" class="mailto-btn">
+              <span class="mail-icon"></span>
+              <span class="mail-txt">hong@kbs.co.kr</span>
+            </button>
+          </div>
+        </div>
+        <div class="reporter-info">
+          <div class="reporter-img-wrapper">
+            <span class="default-img"></span>
+            <!-- <img src="" alt="test-img" class="image" /> -->
+          </div>
+          <div class="reporter-links-text">
+            <a href="#" class="reporter-name-link">
+              <span class="home-icon"></span>
+              <span class="reporter-name">홍길동 기자</span>
+              <span class="arrow"></span>
+            </a>
+            <button type="button" class="mailto-btn">
+              <span class="mail-icon"></span>
+              <span class="mail-txt">hong@kbs.co.kr</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="view-like box">
+        <h4 class="title">이 기사가 좋으셨다면</h4>
+        <div class="like-btns">
+          <button type="button" class="like-button common-button">
+            <div class="image"></div>
+            <div class="text-wrapper">
+              <p class="title">좋아요</p>
+              <p class="numbers">1,234</p>
+            </div>
+          </button>
+          <button type="button" class="cheer-button common-button">
+            <div class="image"></div>
+            <div class="text-wrapper">
+              <p class="title">응원해요</p>
+              <p class="numbers">900</p>
+            </div>
+          </button>
+          <button type="button" class="want-button common-button">
+            <div class="image"></div>
+            <div class="text-wrapper">
+              <p class="title">후속 원해요</p>
+              <p class="numbers">85</p>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="view-series box">
+        <div class="title-wrapper has-border">
+          <h4 class="title">시리즈</h4>
+        </div>
+        <p class="sub-title">지진, 우리는...</p>
+        <div class="view-series-swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="box-contents horizontal has-margin">
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="box-contents horizontal has-margin">
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="box-contents horizontal has-margin">
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="box-content">
+                  <div class="thumbnail">
+                    <img
+                      src="../../resource/image/mobile/thum_headerline1.jpg"
+                      alt="test img"
+                      class="img"
+                    />
+                  </div>
+                  <div class="title-wrapper">
+                    <p class="title">
+                      ‘전세사기 특별법’ 국회 본회의 통과…“최우선변제금 무이자
+                      대출”
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="view-series-indicator indicator"></div>
+      </div>
+      <div class="view-issue box">
+        <div class="title-wrapper has-border space-between">
+          <h4 class="title">이슈</h4>
+          <a href="#" class="more-btn"></a>
+        </div>
+        <p class="sub-title">'전세 사기' 피해 확산</p>
+        <div class="box-contents horizontal has-margin">
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+            </div>
+            <div class="title-wrapper">
+              <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+            </div>
+            <div class="title-wrapper">
+              <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+            </div>
+            <div class="title-wrapper">
+              <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+            </div>
+            <div class="title-wrapper">
+              <p class="title">제주 여행 찍어 올린 타이완 유튜버…‘불티’</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="view-headline-news box">
+        <div class="title-wrapper">
+          <h4 class="title">전주 - 주요뉴스</h4>
+        </div>
+        <a href="#" class="box-content large">
+          <div class="thumbnail">
+            <img
+              class="img"
+              src="../../resource/image/mobile/thum_headerline1.jpg"
+              alt="test img"
+            />
+            <span class="play-icon large"></span>
+          </div>
+          <div class="title-wrapper">
+            <p class="title">
+              [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+              “서방, 우리 파괴하려 해...
+            </p>
+          </div>
+        </a>
+        <div class="box-contents horizontal has-margin">
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="today-hotclick box">
+        <div class="title-wrapper">
+          <h4 class="title">오늘의 HOT CLICK</h4>
+        </div>
+        <div class="box-contents horizontal">
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="most-viewed-news box">
+        <div class="title-wrapper flex">
+          <h4 class="title">많이 본 뉴스</h4>
+          <p class="sub-title">
+            각 플랫폼 별 최근 12시간동안 많이 본 기사 제공
+          </p>
+        </div>
+        <ul class="tab-btns" data-tab-contents="most-viewed">
+          <li class="tab-btns-list on">
+            <button class="tab-btn" type="button">KBS</button>
+          </li>
+          <li class="tab-btns-list">
+            <button class="tab-btn" type="button">포털</button>
+          </li>
+          <li class="tab-btns-list">
+            <button class="tab-btn" type="button">유튜브</button>
+          </li>
+        </ul>
+        <div class="tab-contents" id="most-viewed">
+          <div class="tab-contents-list">
+            <div class="box-contents vertical">
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">1</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">2</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">3</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제 [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의
+                    파격적인 인구 유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">4</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">5</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">6</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제 [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의
+                    파격적인 인구 유인책 화제
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tab-contents-list">
+            <div class="box-contents vertical">
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">1</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">2</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">3</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제 [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의
+                    파격적인 인구 유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">4</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">5</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">6</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제 [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의
+                    파격적인 인구 유인책 화제
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tab-contents-list">
+            <div class="box-contents vertical">
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">1</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">2</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">3</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제 [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의
+                    파격적인 인구 유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">4</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">5</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="box-content">
+                <div class="thumbnail">
+                  <img
+                    src="../../resource/image/mobile/thum_headerline1.jpg"
+                    alt="test img"
+                    class="img"
+                  />
+                  <span class="rank-badge">6</span>
+                </div>
+                <div class="title-wrapper">
+                  <p class="title">
+                    [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의 파격적인 인구
+                    유인책 화제 [잇슈 SNS] “섬으로 이주하면 1억 원”…아일랜드의
+                    파격적인 인구 유인책 화제
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ai-pick box">
+        <div class="title-wrapper">
+          <h4 class="title">AI PICK</h4>
+        </div>
+        <div class="box-contents horizontal">
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+          <a href="#" class="box-content">
+            <div class="thumbnail">
+              <img
+                class="img"
+                src="../../resource/image/mobile/thum_headerline1.jpg"
+                alt="test img"
+              />
+              <span class="play-icon"></span>
+            </div>
+            <div class="title-wrapper">
+              <p class="title">
+                [리얼라이브]/러시아 전승절...모스크바 붉은광장서 열병식/푸틴
+                “서방, 우리 파괴하려 해...
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="reply-title-wrapper" id="comment-area">
+        <h4 class="title">이 기사에 대한 의견을 남겨주세요.</h4>
+      </div>
+      <div class="comment-guide">
+        <span class="info-icon"></span>
+        <p class="description">
+          KBS는 올바른 여론 형성을 위해 자유로운<br />
+          댓글 작성을 지지합니다.<br />
+          다만 해당 기사는 댓글을 통해 피해자에 대한 2차 가해<br />
+          우려가 제기됨에 따라 자체 논의를 거쳐 댓글창을<br />
+          운영하지 않기로 결정했습니다.<br />
+          여러분의 양해를 바랍니다.<br />
+        </p>
+      </div>
+      <div class="popup tts-popup">
+        <div class="title-wrapper">
+          <p class="title">안내</p>
+        </div>
+        <div class="popup-texts">
+          <p class="main-text">
+            읽어주기 기능은 크롬기반의 브라우저에만 사용하실 수 있습니다.
+          </p>
+        </div>
+        <button type="button" class="primary-btn check-btn">확인</button>
+      </div>
+      <div class="popup summary-popup">
+        <div class="title-wrapper">
+          <p class="title">요약 내용</p>
+        </div>
+        <div class="popup-texts">
+          <p class="main-text">
+            최근 교사들이 연이어 세상을 떠난 가운데, 경기 용인시에서도 현직
+            교사가 숨진 채 발견됐습니다. 정년을 1년 앞둔 60대 고등학교 교사로
+            확인됐는데, 유족은 고인이 최근 학부모에게 경찰 고소를 당하면서, 큰
+            압박감을 받았다고 주장했습니다.
+          </p>
+          <p class="sub-text">
+            요약 내용은 네이버 파파고 기사 요약을 통해 제공하고 있습니다.
+          </p>
+        </div>
+        <button type="button" class="primary-btn close-btn">닫기</button>
+      </div>
+      <div class="popup player-setting-popup">
+        <div class="title-wrapper">
+          <p class="title">동영상 재생 설정</p>
+        </div>
+        <div class="selects-wrapper">
+          <div class="common-select">
+            <p class="title">화질</p>
+            <select class="select" name="">
+              <option value="">표준화질</option>
+              <option value="">고화질</option>
+            </select>
+          </div>
+          <div class="common-select">
+            <p class="title">재생 속도</p>
+            <select class="select" name="">
+              <option value="">0.5x</option>
+              <option value="" selected>1x</option>
+              <option value="">2x</option>
+              <option value="">3x</option>
+            </select>
+          </div>
+          <div class="common-select">
+            <p class="title">자막</p>
+            <select class="select" name="">
+              <option value="">자막 끄기</option>
+              <option value="" selected>한국어</option>
+              <option value="">영어</option>
+              <option value="">일본어</option>
+            </select>
+          </div>
+          <div class="common-select">
+            <p class="title">자동재생</p>
+            <select class="select" name="">
+              <option value="">ON</option>
+              <option value="">OFF</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" class="primary-btn check-btn">확인</button>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="dim"></div>
+      <button type="button" class="top-btn">
+        <span class="arrow"></span>
+        <span class="txt">TOP</span>
+      </button>
+      <aside class="aside">
+        <ul class="aside-btns">
+          <li class="aside-btns-list">
+            <button type="button" class="aside-btn back-btn"></button>
+          </li>
+          <li class="aside-btns-list">
+            <button type="button" class="aside-btn comment-btn"></button>
+          </li>
+          <li class="aside-btns-list">
+            <button type="button" class="aside-btn like-btn"></button>
+          </li>
+          <li class="aside-btns-list">
+            <button type="button" class="aside-btn share-btn"></button>
+          </li>
+          <li class="aside-btns-list has-txt-btn">
+            <button type="button" class="aside-btn txt-btn">
+              <span class="txt-img"></span>
+            </button>
+            <ul class="btn-menu">
+              <li class="btn-menu-list">
+                <button type="button" class="common-btn txt-btn">
+                  <span class="txt-img"></span>
+                </button>
+              </li>
+              <li class="btn-menu-list">
+                <button type="button" class="common-btn large-btn">확대</button>
+              </li>
+              <li class="btn-menu-list">
+                <button type="button" class="common-btn normal-btn">
+                  기본
+                </button>
+              </li>
+              <li class="btn-menu-list">
+                <button type="button" class="common-btn small-btn">축소</button>
+              </li>
+            </ul>
+          </li>
+          <li class="aside-btns-list">
+            <button type="button" class="aside-btn dark-btn"></button>
+          </li>
+        </ul>
+      </aside>
+      <div class="popup share-menu">
+        <div class="title-wrapper">
+          <p class="title">공유하기</p>
+        </div>
+        <div class="share-sns">
+          <button href="#" class="share-sns-btn">
+            <span class="sns-img facebook"></span>
+            <span class="txt">페이스북</span>
+          </button>
+          <button href="#" class="share-sns-btn">
+            <span class="sns-img twitter"></span>
+            <span class="txt">트위터</span>
+          </button>
+          <button href="#" class="share-sns-btn">
+            <span class="sns-img kakao"></span>
+            <span class="txt">카카오톡</span>
+          </button>
+          <button href="#" class="share-sns-btn">
+            <span class="sns-img kakao-story"></span>
+            <span class="txt">카카오스토리</span>
+          </button>
+          <a href="#" class="share-sns-btn">
+            <span class="sns-img naver-blog"></span>
+            <span class="txt">네이버블로그</span>
+          </a>
+          <button href="#" class="share-sns-btn">
+            <span class="sns-img naver-band"></span>
+            <span class="txt">네이버밴드</span>
+          </button>
+          <button href="#" class="share-sns-btn">
+            <span class="sns-img link-copy"></span>
+            <span class="txt">링크복사</span>
+          </button>
+        </div>
+        <button type="button" class="primary-btn close-btn">닫기</button>
+      </div>
+      <div class="notice-alarm-wrapper">
+        <div class="notice-alarm">
+          <div class="footer-notice">
+            <p class="notice-txt">공지</p>
+            <a href="#" class="title" target="_blank"
+              >[3/21~22] KBS 서비스 시스템 개선 작업 안내 [3/21~22] KBS 서비스
+              시스템 개선 작업 안내</a
+            >
+          </div>
+          <div class="footer-alarm">
+            <p class="alarm-txt">알림</p>
+            <a href="#" class="title" target="_blank"
+              >2023년 4월 KBS1, 2TV 프로그램 조정 안내</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="application-download-links-wrapper">
+        <div class="application-download-links">
+          <button type="button" class="open-btn">
+            <span class="txt">KBS 어플리케이션 다운로드</span>
+            <span class="arrow-icon"></span>
+          </button>
+          <div class="app-links">
+            <a href="#" class="app-link my-k">
+              <div class="img"></div>
+              <p class="txt">myK</p>
+            </a>
+            <a href="#" class="app-link kbs-news">
+              <div class="img"></div>
+              <p class="txt">KBS NEWS</p>
+            </a>
+            <a href="#" class="app-link radio-kong">
+              <div class="img"></div>
+              <p class="txt">라디오 Kong</p>
+            </a>
+            <a href="#" class="app-link world-tv">
+              <div class="img"></div>
+              <p class="txt">World TV</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="sns-links">
+        <li class="sns-links-list">
+          <a href="#" class="sns-link youtube"></a>
+        </li>
+        <li class="sns-links-list">
+          <a href="#" class="sns-link kakao"></a>
+        </li>
+        <li class="sns-links-list">
+          <a href="#" class="sns-link facebook"></a>
+        </li>
+        <li class="sns-links-list">
+          <a href="#" class="sns-link twitter"></a>
+        </li>
+        <li class="sns-links-list">
+          <a href="#" class="sns-link instagram"></a>
+        </li>
+      </ul>
+      <div class="site-links-wrapper">
+        <ul class="site-links">
+          <li class="site-links-list">
+            <a href="#" class="site-link kbs-introduce">KBS소개</a>
+          </li>
+          <li class="site-links-list">
+            <a href="#" class="site-link">사업자정보</a>
+          </li>
+          <li class="site-links-list">
+            <a href="#" class="site-link">개인정보처리방침</a>
+          </li>
+          <li class="site-links-list">
+            <a href="#" class="site-link">이용약관</a>
+          </li>
+        </ul>
+        <ul class="site-links">
+          <li class="site-links-list">
+            <a href="#" class="site-link viewer-center">시청자권익센터</a>
+          </li>
+          <li class="site-links-list">
+            <a href="#" class="site-link">사이버 감사실</a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">KBS ALL rights reserved</p>
+    </footer>
+  </body>
+  <script
+    type="text/javascript"
+    src="../../resource/module/jquery-3.7.0/jquery-3.7.0.min.js"
+  ></script>
+  <script src="../../resource/module/swiper-bundle/swiper-bundle.min.js"></script>
+  <!-- <script
+    type="text/javascript"
+    src="../../js/mobile/common/ui_main.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../js/mobile/common/ui_header.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../js/mobile/common/ui_footer.js"
+  ></script> -->
+  <!-- 테스트 스크립트 -->
+  <script
+    type="text/javascript"
+    src="../../js/mobile/common/ui_header-es6.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../js/mobile/common/ui_footer-es6.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../../js/mobile/common/ui_view-es6.js"
+  ></script>
+</html>

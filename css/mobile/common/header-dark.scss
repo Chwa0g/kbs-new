@@ -1,0 +1,296 @@
+@charset 'utf-8';
+@import "../common/_variable";
+@import "../common/_dark-variable";
+@import "../common/_svg";
+
+body.dark {
+  #header {
+    .breaking-news {
+      background-color: $white;
+      .badge {
+        background: url($breakingNewsDark) center center no-repeat;
+      }
+      .title {
+        color: $black;
+      }
+      .more-btn {
+        border: none;
+        background: url($moreBtn) center center no-repeat;
+        background-size: 16px 16px;
+      }
+      &.rolling {
+        .arrow-btn {
+          background: url($downGray) center center no-repeat;
+          border: 1px solid $neutral600;
+        }
+      }
+    }
+    .breaking-news-history-wrapper {
+      background-color: $neutral2200;
+      .breaking-news-history {
+        .breaking-news-history-list {
+          .circle {
+            background: url($breakingDotDark) center center no-repeat;
+            &::after {
+              background-color: $neutral700;
+            }
+          }
+
+          .time {
+            color: $black;
+          }
+          .txt {
+            color: $black;
+          }
+        }
+      }
+      .link-wrapper {
+        .all-link {
+          border: 1px solid $neutral700;
+          .text {
+            color: $neutral800;
+          }
+          .arrow {
+            background: url($breakingNewsArrowDark) center center no-repeat;
+          }
+        }
+      }
+    }
+    .top-menu {
+      background: $black;
+
+      .report-link {
+        color: $darkBlue;
+        background-color: $black;
+        border: 1px solid $darkNeutral;
+      }
+      .top-logo {
+        .home-link {
+          .img {
+            content: url(/resource/image/mobile/mo_logo_dark.png);
+          }
+        }
+      }
+      .search-hamburger {
+        .search-btn {
+          background: url($searchWhite) center center no-repeat;
+        }
+        .hamburger-btn {
+          background: url($menuWhite) center center no-repeat;
+        }
+      }
+    }
+    .top-quick-menu {
+      background-color: $neutral800;
+      border-top: 1px solid $darkBlack;
+      border-bottom: 1px solid $darkBlack;
+      .on-air-link {
+        border: 1px solid $darkNeutral100;
+
+        .txt {
+          color: $white;
+        }
+      }
+    }
+    .disaster-rolling-message {
+      background-color: $darkNeutral200;
+      .disaster-rolling-swiper {
+        .rolling-message {
+          .txt {
+            color: $neutral3000;
+          }
+        }
+      }
+      .arrow-btn {
+        background: url($downGray) center center no-repeat;
+        border: 1px solid $neutral600;
+      }
+    }
+    .search-menu {
+      background-color: $black;
+      .search-input-keywords {
+        background-color: $neutral800;
+
+        .search-input-wrapper {
+          .search-box {
+            .search-input {
+              border: 1px solid $neutral2000;
+              background-color: $neutral800;
+              color: $neutral200;
+
+              &::placeholder {
+                color: $neutral200;
+              }
+            }
+            .recommend-search {
+              .recommend-search-list {
+                .recommend-word {
+                  background-color: $neutral800;
+                  color: $neutral200;
+
+                  strong {
+                    color: $neutral200;
+                  }
+                }
+              }
+            }
+            .close-btn {
+              background: url($clearWhite) center center no-repeat;
+            }
+          }
+        }
+        .keywords {
+          .keyword {
+            color: $white;
+            border: 1px solid $neutral2000;
+          }
+        }
+      }
+      .most-viewed {
+        > .title {
+          color: $white;
+        }
+
+        background-color: $black;
+      }
+    }
+    .hamburger-menu {
+      background-color: $black;
+      .ham-top-menu {
+        background-color: $black;
+        border-bottom: 1px solid $neutral800;
+        .report-disaster-link {
+          .report-link {
+            color: $darkBlue;
+            background-color: $black;
+            border: 1px solid $darkNeutral;
+          }
+        }
+        .setting-close {
+          .setting-btn {
+            background: url($settingDark) center center no-repeat;
+          }
+        }
+      }
+      .login-signup {
+        background-color: $black;
+
+        .common-btn.dark-mode {
+          .img {
+            background: url($allMenuLightMode) center center no-repeat;
+          }
+        }
+      }
+      .divide-border {
+        background-color: $black200;
+      }
+      .nav-links-slide-wrapper {
+        border-bottom: 1px solid $neutral800;
+        .nav-links-slide {
+          background-color: $black;
+          .nav-links {
+            .nav-links-list {
+              .nav-link {
+                border: 1px solid $neutral2000;
+                color: $white;
+
+                &.live {
+                  border: 1px solid $blue600;
+                }
+              }
+            }
+          }
+        }
+        .deco-img {
+          &.left {
+            background: url($hamDecoDark) center center no-repeat;
+          }
+          &.right {
+            background: url($hamDecoDark2) center center no-repeat;
+          }
+        }
+      }
+      .full-menu {
+        .full-menu-list {
+          border-bottom: 1px solid $neutral800;
+          .common-btn {
+            background-color: $black;
+            .menu-name {
+              color: $neutral2000;
+            }
+            .arrow {
+              background: url($downDark) center center no-repeat;
+            }
+            &.on {
+              background-color: $neutral800;
+            }
+          }
+          .menu-links-wrapper {
+            background-color: $neutral800;
+            .menu-links {
+              .menu-links-list {
+                &.header {
+                  color: $blue300;
+                }
+                .menu-link {
+                  color: $neutral400;
+                }
+              }
+            }
+          }
+        }
+      }
+      .ham-footer {
+        background-color: $neutral800;
+        .home-link {
+          color: #bbb;
+        }
+        .common-link {
+          &.youtube {
+            background: url($hamYoutubeDark) center center no-repeat;
+          }
+          &.kakao {
+            background: url($hamKakaoDark) center center no-repeat;
+          }
+          &.facebook {
+            background: url($hamFacebookDark) center center no-repeat;
+          }
+          &.twitter {
+            background: url($hamTwitterDark) center center no-repeat;
+          }
+          &.instagram {
+            background: url($hamInstagramDark) center center no-repeat;
+          }
+        }
+      }
+    }
+    .top-notice {
+      background-color: $darkBlack100;
+      .notice-title {
+        color: $neutral3000;
+      }
+    }
+    .top-quick-menu-wrapper {
+      .premiumk-menu {
+        background-color: $neutral800;
+
+        .menu-links {
+          .menu-link {
+            color: $neutral400;
+          }
+          .menu-links-list {
+            &.header {
+              color: $blue300;
+              .menu-link {
+                color: $blue300;
+              }
+            }
+          }
+        }
+        .close-button {
+          background: url($closeWhite) center center no-repeat;
+        }
+      }
+    }
+  }
+}

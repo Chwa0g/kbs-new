@@ -1,0 +1,115 @@
+@charset 'utf-8';
+@import "../common/_variable";
+@import "../common/_dark-variable";
+@import "../common/_svg";
+
+body.dark {
+  #contents {
+    background-color: $black;
+
+    .divide-line {
+      background-color: $darkBlack;
+    }
+
+    .box {
+      background-color: $darkBlack200;
+
+      > .title-wrapper {
+        .sub-title {
+          color: $neutral2000;
+        }
+        &.has-border {
+          border-bottom: 1px solid $darkBlack400;
+        }
+      }
+
+      .txt-contents {
+        .txt-contents-list {
+          border-bottom: 1px solid $neutral800;
+        }
+      }
+
+      &.nationwide-news {
+        .desc-wrapper {
+          .desc-box {
+            border: 1px solid $neutral800;
+            background-color: $neutral2700;
+          }
+        }
+      }
+
+      &.youtube-live {
+        .ready {
+          background-color: $neutral800;
+          .txt {
+            color: $neutral500;
+          }
+        }
+      }
+
+      &.recommend-news {
+        .recommend-news-swiper-wrapper {
+          border-top: 1px solid $darkBlack500;
+        }
+      }
+    }
+
+    .box-contents {
+      &.vertical {
+        .box-content {
+          border: 1px solid $neutral800;
+        }
+      }
+    }
+
+    .hashtags-wrapper {
+      background-color: $darkBlack300;
+
+      .hashtags {
+        .hashtags-list {
+          .hashtags-link {
+            color: $black200;
+            border: none;
+            background-color: $darkNeutral300;
+          }
+        }
+      }
+    }
+
+    .disaster-portal-wrapper {
+      .disaster-link {
+        .txt {
+          color: $black;
+        }
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: $neutral700;
+      &.swiper-pagination-bullet-active {
+        background-color: $white;
+      }
+    }
+
+    .tab-btns {
+      background-color: $darkBlack500;
+      .tab-btns-list {
+        .tab-btn {
+          color: $neutral2000;
+        }
+        &.on {
+          .tab-btn {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .categories-box {
+      background-color: $blue1100;
+      .deco-img {
+        background: url($categoryDecoDark) center center no-repeat;
+      }
+    }
+  }
+}

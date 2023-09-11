@@ -1,0 +1,77 @@
+@charset 'utf-8';
+@import "_variable";
+@import "_dark-variable";
+@import "_svg";
+
+body.dark {
+  * {
+    color: $neutral3000;
+  }
+
+  .hashtag-links {
+    .hashtag-list {
+      .hashtag-link {
+        background-color: $darkBlack300;
+        border: 1px solid $darkBlack400;
+        color: $darkBlue;
+
+        &:hover {
+          background-color: $blue500;
+          border: 1px solid $blue500;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #contents {
+    .tab-btns {
+      &.type-01 {
+        .tab-btns-list {
+          .tab-btn {
+            color: $darkBlue;
+            background-color: $darkBlack300;
+            border: 1px solid $darkBlack400;
+          }
+          &.on {
+            .tab-btn {
+              color: $white;
+              background-color: $blue500;
+              border: 1px solid $blue500;
+            }
+          }
+        }
+      }
+      &.type-02 {
+        .tab-btns-list {
+          &::after {
+            background-color: $darkNeutral700;
+          }
+
+          .tab-btn {
+            color: $neutral3000;
+          }
+
+          &.on {
+            .tab-btn {
+              color: $darkBlue;
+            }
+          }
+        }
+      }
+      &.type-03 {
+        background-color: $darkBlack1400;
+        .tab-btns-list {
+          .tab-btn {
+            color: $neutral2000;
+          }
+          &.on {
+            .tab-btn {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

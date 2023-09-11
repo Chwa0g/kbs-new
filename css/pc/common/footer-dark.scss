@@ -1,0 +1,241 @@
+@charset 'utf-8';
+@import "_variable";
+@import "_dark-variable";
+@import "_svg";
+
+body.dark {
+  #footer {
+    .full-menu-wrapper {
+      background-color: $darkBlack500;
+      border-bottom: 1px solid #696969;
+      .full-menu {
+        .common-menu {
+          border-right: 1px solid #696969;
+
+          .full-menu-links-wrapper {
+            .full-menu-heading {
+              color: $white;
+            }
+            .full-menu-links {
+              .full-menu-list {
+                .full-menu-link {
+                  color: #fff;
+                }
+              }
+            }
+          }
+
+          .sub-heading-wrapper {
+            .sub-heading {
+              color: $white;
+              .sub-heading-link {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-notice-wrapper {
+      background-color: $black;
+      border-bottom: 1px solid $darkBlack1300;
+      .footer-notice {
+        .notice-title {
+          color: $neutral500;
+        }
+        .notice-txt {
+          color: $neutral500;
+        }
+      }
+    }
+    .footer-inform-wrapper {
+      background-color: $darkBlack1300;
+      border-bottom: 1px solid $darkBlack1300;
+      .footer-inform {
+        .inform-txt {
+          color: $neutral500;
+        }
+      }
+    }
+    .footer-util-menu-wrapper {
+      background-color: $black;
+      border-bottom: 1px solid $darkBlack1300;
+
+      .footer-util-menu {
+        .footer-common-select {
+          .footer-select-btn {
+            border-left: 1px solid $darkBlack1300;
+            border-right: 1px solid $darkBlack1300;
+
+            .arrow {
+              background: url($selectGray) 0 0 no-repeat;
+            }
+          }
+          .common-select-links {
+            background-color: $black;
+            border: 1px solid $darkBlack1300;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .footer-address-copyright-wrapper {
+      background-color: $black;
+      .footer-address-copyright {
+        .footer-address {
+          color: $neutral700;
+        }
+        .footer-copyright {
+          color: $neutral700;
+        }
+      }
+    }
+    .aside {
+      .aside-btns {
+        border: 1px solid $neutral700;
+        background-color: $darkBlack600;
+        .aside-btns-list {
+          border-bottom: 1px solid $neutral700;
+
+          .comment-btn {
+            .comment-icon {
+              background: url($asideCommentDark) center center no-repeat;
+            }
+          }
+
+          .like-btn {
+            .like-icon {
+              background: url($asideViewLikeOn) center center no-repeat;
+            }
+          }
+
+          .open-menu {
+            .open-menu-list {
+              .open-menu-btn {
+                &.like-menu-btn {
+                  .like-icon {
+                    background: url($asideViewLikeOn) center center no-repeat;
+                  }
+                  .cheer-icon {
+                    background: url($asideViewCheerOn) center center no-repeat;
+                  }
+                  .want-icon {
+                    background: url($asideViewWantOn) center center no-repeat;
+                  }
+                }
+              }
+            }
+          }
+
+          .copy-btn {
+            .copy-icon {
+              background: url($asideCopyDark) center center no-repeat;
+            }
+          }
+
+          .dark-btn {
+            .dark-icon {
+              background: url($lightMode) center center no-repeat;
+            }
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .share-btn {
+            .share-icon {
+              background: url($shareDark) center center no-repeat;
+            }
+          }
+
+          .txt-btn {
+            .txt-icon-wrapper {
+              .txt-icon {
+                &.large {
+                  background: url($txtLargeDark) center center no-repeat;
+                }
+                &.normal {
+                  background: url($txtNormalDark) center center no-repeat;
+                }
+                &.small {
+                  background: url($txtSmallDark) center center no-repeat;
+                }
+              }
+            }
+          }
+
+          .open-menu {
+            .open-menu-list {
+              background-color: $darkNeutral900;
+              .open-menu-btn {
+                .title {
+                  color: $neutral400;
+                }
+                .txt-icon-wrapper {
+                  .txt-icon {
+                    &.large {
+                      background: url($txtLargeDark) center center no-repeat;
+                    }
+                    &.normal {
+                      background: url($txtNormalDark) center center no-repeat;
+                    }
+                    &.small {
+                      background: url($txtSmallDark) center center no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .common-btn {
+            .common-btn-txt {
+              color: $neutral400;
+            }
+            .arrow-icon {
+              background: url($txtArrowDark) center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .share-menu {
+      .title-wrapper {
+        background-color: $neutral700;
+        .title {
+          color: $white;
+        }
+        .close-btn {
+          background: url($clearWhite) center center no-repeat;
+          background-size: 38px 38px;
+        }
+      }
+      .share-links-copy {
+        background-color: $neutral800;
+
+        .copy-input {
+          .input {
+            background-color: $neutral800;
+            border: 1px solid $neutral700;
+            border-right: none;
+            color: $neutral400;
+          }
+        }
+
+        .share-links {
+          .share-links-list {
+            .share-link {
+              .txt {
+                color: $neutral200;
+              }
+            }
+          }
+        }
+      }
+    }
+    .top-btn {
+      background: url($topBtnDark) center center no-repeat;
+    }
+  }
+}

@@ -1,0 +1,182 @@
+@charset 'utf-8';
+@import "../common/_variable";
+@import "../common/_dark-variable";
+@import "../common/_svg";
+
+body.dark {
+  #header {
+    .progress-bar {
+      background-color: $darkBlack700;
+    }
+  }
+  #contents {
+    .view-headline {
+      background-color: $darkBlack800;
+      border-bottom: 1px solid $neutral800;
+      .category-issue {
+        .category-name {
+          background-color: $darkBlack800;
+          border: 1px solid $darkNeutral;
+          color: $darkBlue;
+        }
+        .issue-name {
+          color: $white;
+        }
+      }
+      .dates {
+        .input-date,
+        .edit-date {
+          color: $neutral2000;
+        }
+      }
+      .tts-summary {
+        .tts-btn {
+          background: url($ttsBtnDark) center center no-repeat;
+        }
+      }
+    }
+    .view-article {
+      .related-articles {
+        .title {
+          border-bottom: 1px solid $neutral800;
+        }
+        .related-articles-links {
+          .related-articles-list {
+            border-bottom: 1px solid $neutral800;
+          }
+        }
+      }
+    }
+    .hashtags {
+      .hashtags-list {
+        .hashtags-link {
+          background-color: $darkBlack900;
+          border: 1px solid $darkBlack1000;
+          color: $blue500;
+        }
+      }
+    }
+    .view-reporter {
+      .reporter-info {
+        .reporter-img-wrapper {
+          .default-img {
+            background: url($reporterProfileDark) center center no-repeat;
+          }
+        }
+        .reporter-links-text {
+          .reporter-name-link {
+            .home-icon {
+              background: url($reporterHomeDark) center center no-repeat;
+            }
+          }
+          .mailto-btn {
+            .mail-icon {
+              background: url($reporterMailDark) center center no-repeat;
+            }
+          }
+          .reporter-text {
+            color: $neutral2000;
+          }
+        }
+      }
+    }
+    .view-like {
+      > .title {
+        border-bottom: 1px solid $neutral800;
+      }
+      .like-btns {
+        .like-button {
+          .image {
+            background: url($viewLikeDark) center center no-repeat;
+            background-size: 50px 50px;
+          }
+        }
+        .cheer-button {
+          .image {
+            background: url($viewCheerDark) center center no-repeat;
+            background-size: 50px 50px;
+          }
+        }
+        .want-button {
+          .image {
+            background: url($viewWantDark) center center no-repeat;
+            background-size: 50px 50px;
+          }
+        }
+        .common-button {
+          .text-wrapper {
+            .title {
+              color: $white;
+            }
+            .numbers {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .comment-guide {
+      background-color: $darkBlack600;
+      border-top: 1px solid $neutral800;
+      border-bottom: 1px solid $neutral800;
+      .info-icon {
+        background: url($infoIconDark) center center no-repeat;
+        background-size: 24px 24px;
+      }
+      .description {
+        color: $neutral700;
+      }
+    }
+    .error-box {
+      .buttons-wrapper {
+        .home-button,
+        .prev-page-button {
+          border: 1px solid $darkBlack1200;
+          color: $neutral3000;
+        }
+      }
+      .address {
+        color: $neutral3000;
+      }
+    }
+    .reply-title-wrapper {
+      background-color: $white;
+      .title {
+        color: $black;
+      }
+    }
+  }
+
+  #reply {
+    background-color: $white;
+  }
+
+  .description {
+    .view_img_dsc {
+      color: $white;
+    }
+
+    a {
+      color: $darkBlue;
+    }
+
+    div.anchor {
+      background-color: $darkBlack1100 !important;
+      span.anchor {
+        color: $white !important;
+      }
+    }
+    div.report {
+      background-color: $darkBlack1100 !important;
+      span.report {
+        color: $white !important;
+      }
+    }
+  }
+
+  .article-summary {
+    &:before {
+      background: $darkNeutral100;
+    }
+  }
+}

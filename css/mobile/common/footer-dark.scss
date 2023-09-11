@@ -1,0 +1,119 @@
+@charset 'utf-8';
+@import "../common/_variable";
+@import "../common/_dark-variable";
+@import "../common/_svg";
+
+body.dark {
+  #footer {
+    background-color: $black;
+    .notice-alarm-wrapper {
+      background-color: $black;
+      .notice-alarm {
+        .footer-notice {
+          background-color: $darkBlack600;
+          border-bottom: 1px solid rgba(72, 72, 72, 0.5);
+
+          .title {
+            color: $neutral300;
+          }
+        }
+        .footer-alarm {
+          background-color: $darkBlack600;
+
+          .title {
+            color: $neutral300;
+          }
+        }
+      }
+    }
+    .application-download-links-wrapper {
+      .application-download-links {
+        background-color: $neutral800;
+        border: 1px solid $neutral500;
+        .open-btn {
+          .txt {
+            color: $neutral200;
+          }
+          .arrow-icon {
+            background: url($downDark) center center no-repeat;
+          }
+        }
+      }
+    }
+    .sns-links {
+      .sns-links-list {
+        background-color: transparent;
+      }
+      .sns-link {
+        width: 32px;
+        height: 32px;
+        &.youtube {
+          background: url($youtubeDark) center center no-repeat;
+        }
+        &.kakao {
+          background: url($kakaoDark) center center no-repeat;
+        }
+        &.facebook {
+          background: url($facebookDark) center center no-repeat;
+        }
+        &.twitter {
+          background: url($twitterDark) center center no-repeat;
+        }
+        &.instagram {
+          background: url($instagramDark) center center no-repeat;
+        }
+      }
+    }
+    .site-links-wrapper {
+      .site-links {
+        .site-links-list {
+          .site-link {
+            color: $neutral700;
+            &.kbs-introduce {
+              color: $neutral2000;
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      color: $neutral700;
+    }
+    .aside {
+      background-color: $black200;
+      border-top: 1px solid $neutral800;
+      .aside-btns {
+        .aside-btns-list {
+          .aside-btn {
+            &.share-btn {
+              background: url($shareDark) center center no-repeat;
+            }
+            &.dark-btn {
+              background: url($asideLightMode) center center no-repeat;
+            }
+            &.txt-btn {
+              background-color: $black200;
+              .txt-img {
+                background: url($txtImgDark) center center no-repeat;
+              }
+            }
+          }
+          .btn-menu {
+            .btn-menu-list {
+              background-color: $black200;
+              border-right: 1px solid $darkBlack600;
+              .common-btn {
+                color: $neutral700;
+              }
+              .txt-btn {
+                .txt-img {
+                  background: url($txtImgDarkOn) center center no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+/* sns */
+/* select */
+/* button */
+/* categories */
+/* calamity */
+/* tooltip direction */
+/* decoration */
+body.dark #contents {
+  background-color: #1e1e20;
+}
+body.dark #contents .look-more .txt {
+  color: #f3f3f3;
+}
+body.dark #contents .look-more .plus-btn {
+  background: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14.5' cy='14.5' r='14' fill='%23272829' stroke='%23505153'/%3E%3Crect x='7' y='14' width='15' height='1' fill='%23909599'/%3E%3Crect x='14' y='7' width='1' height='15' fill='%23909599'/%3E%3C/svg%3E") center center no-repeat;
+}
+body.dark #contents .box {
+  border: 1px solid #131313;
+  background-color: #272829;
+}
+body.dark #contents .box .box-title {
+  background-color: #272829;
+}
+body.dark #contents .box .box-title .title {
+  color: #fff;
+}
+body.dark #contents .box .box-title .sub-title {
+  color: #b5b5b5;
+}
+body.dark #contents .box .box-content .txt-wrapper .time-wrapper .time {
+  border: 1px solid #4f4f4f;
+  background-color: #272829;
+  color: #999;
+}
+body.dark #contents .box .box-content:hover .txt-wrapper .title {
+  color: #53acff;
+}
+body.dark #contents .box .box-content.has-border {
+  border-bottom: 1px solid #313334;
+}
+body.dark #contents .box .box-contents.has-border-contents .box-content:first-child {
+  border-top: 1px solid #3f4142;
+}
+body.dark #contents .box.head-line .box-contents .main-news-wrapper .main-news .txt-wrapper .news-txt {
+  color: #b5b5b5;
+}
+body.dark #contents .look-more-wrapper {
+  border-top: 1px solid #313334;
+}
+body.dark #contents .pagination-group-wrapper {
+  border-top: 1px solid #313334;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .previous {
+  border: 1px solid #505153;
+  background-color: #343638;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .previous::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M13.125 3.75L6.875 10L13.125 16.25' stroke='%23C6CBD0' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .next {
+  border: 1px solid #505153;
+  background-color: #343638;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .next::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M13.125 3.75L6.875 10L13.125 16.25' stroke='%23C6CBD0' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .pagination {
+  border-top: 1px solid #505153;
+  border-bottom: 1px solid #505153;
+  color: #787878;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .pagination .swiper-pagintaion-current {
+  color: #b5b5b5;
+}
+body.dark #contents .pagination-group-wrapper .pagination-group .pagination .swiper-pagination-total {
+  color: #787878;
+}

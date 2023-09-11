@@ -1,0 +1,48 @@
+/* sns */
+/* select */
+/* button */
+/* categories */
+/* calamity */
+/* tooltip direction */
+/* decoration */
+body.dark * {
+  color: #f3f3f3;
+}
+body.dark .hashtag-links .hashtag-list .hashtag-link {
+  background-color: #232426;
+  border: 1px solid #4d4c4c;
+  color: #53acff;
+}
+body.dark .hashtag-links .hashtag-list .hashtag-link:hover {
+  background-color: #2282b9;
+  border: 1px solid #2282b9;
+  color: #fff;
+}
+body.dark #contents .tab-btns.type-01 .tab-btns-list .tab-btn {
+  color: #53acff;
+  background-color: #232426;
+  border: 1px solid #4d4c4c;
+}
+body.dark #contents .tab-btns.type-01 .tab-btns-list.on .tab-btn {
+  color: #fff;
+  background-color: #2282b9;
+  border: 1px solid #2282b9;
+}
+body.dark #contents .tab-btns.type-02 .tab-btns-list::after {
+  background-color: #747474;
+}
+body.dark #contents .tab-btns.type-02 .tab-btns-list .tab-btn {
+  color: #f3f3f3;
+}
+body.dark #contents .tab-btns.type-02 .tab-btns-list.on .tab-btn {
+  color: #53acff;
+}
+body.dark #contents .tab-btns.type-03 {
+  background-color: #383838;
+}
+body.dark #contents .tab-btns.type-03 .tab-btns-list .tab-btn {
+  color: #bbb;
+}
+body.dark #contents .tab-btns.type-03 .tab-btns-list.on .tab-btn {
+  color: #fff;
+}
